@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.rst.oauth2.google.security.DefaultUserAuthenticationConverterTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-04-01T08:42:01" hostname="Yirgachefe.local" time="0.011">
+  <properties/>
+  <testcase name="shouldExtractAuthenticationWhenAuthoritiesIsCollection" classname="com.rst.oauth2.google.security.DefaultUserAuthenticationConverterTest" time="0.01"/>
+  <testcase name="shouldExtractAuthenticationWhenAuthoritiesIsString" classname="com.rst.oauth2.google.security.DefaultUserAuthenticationConverterTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

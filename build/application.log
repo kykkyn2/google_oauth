@@ -1,0 +1,881 @@
+17:45:35.046 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:35.047 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:35.047 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:35.048 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:35.048 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:35.049 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:35.087 [main] INFO  c.r.o.g.c.SpringBootRestApplication: Starting SpringBootRestApplication on Yirgachefe.local with PID 1362 (/Users/xarus/Downloads/spring-security-oauth2-google-master/build/classes/main started by root in /Users/xarus/Downloads/spring-security-oauth2-google-master)
+17:45:35.129 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext: Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@595b007d: startup date [Wed Apr 01 17:45:35 KST 2015]; root of context hierarchy
+17:45:35.539 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [security-context.xml]
+17:45:35.684 [main] INFO  o.s.s.c.SpringSecurityCoreVersion: You are running with Spring Security Core 3.2.5.RELEASE
+17:45:35.687 [main] INFO  o.s.s.c.SecurityNamespaceHandler: Spring Security 'config' module version is 3.2.5.RELEASE
+17:45:35.717 [main] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser: Creating access control expression attribute 'isFullyAuthenticated()' for /**
+17:45:35.731 [main] INFO  o.s.s.c.h.HttpSecurityBeanDefinitionParser: Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1500, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2200, <oauth2ClientContextFilter>, order = 2201, <oAuth2AuthenticationProcessingFilter>, order = 2299, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2300]
+17:45:35.880 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory: Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+17:45:36.006 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory: Overriding bean definition for bean 'ignoredPathsWebSecurityConfigurerAdapter': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/SpringBootWebSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ManagementSecurityAutoConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ManagementSecurityAutoConfiguration.class]]
+17:45:36.573 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [applicationConfig: [classpath:/application.properties]] PropertySource with search precedence immediately lower than [applicationConfigurationProperties]
+17:45:36.574 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Removing [applicationConfigurationProperties] PropertySource
+17:45:36.574 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Removing [defaultProperties] PropertySource
+17:45:36.652 [main] INFO  o.h.validator.internal.util.Version: HV000001: Hibernate Validator 5.0.3.Final
+17:45:37.072 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory: Server initialized with port: 9000
+17:45:37.075 [main] INFO  org.eclipse.jetty.server.Server: jetty-8.1.15.v20140411
+17:45:37.127 [main] INFO  /: Initializing Spring embedded WebApplicationContext
+17:45:37.127 [main] DEBUG o.s.web.context.ContextLoader: Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+17:45:37.127 [main] INFO  o.s.web.context.ContextLoader: Root WebApplicationContext: initialization completed in 2002 ms
+17:45:37.278 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:37.278 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:37.279 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:37.279 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:37.279 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:37.279 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:37.283 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:37.283 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:37.283 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:37.284 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:37.284 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:37.284 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:37.296 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:37.296 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:37.297 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:37.297 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:37.297 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:37.297 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:37.383 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:37.384 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:37.384 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:37.384 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:37.384 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:37.384 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:37.394 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:37.395 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:37.395 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:37.395 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:37.395 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:37.395 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:37.399 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:37.403 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:37.403 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:37.403 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:37.404 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:37.404 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:37.422 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:37.422 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:37.423 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:37.423 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:37.423 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:37.423 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:37.431 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:37.432 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:37.432 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:37.432 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:37.432 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:37.432 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:37.442 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:37.442 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:37.442 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:37.443 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:37.443 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:37.443 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:37.788 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource: Adding web access control expression 'isFullyAuthenticated()', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1
+17:45:37.795 [main] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Validated configuration attributes
+17:45:37.796 [main] INFO  o.s.s.w.DefaultSecurityFilterChain: Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@6a2eea2a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b967222, org.springframework.security.web.authentication.logout.LogoutFilter@3b0ee03a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1ba05e38, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c298dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e7dfd44, org.springframework.security.web.session.SessionManagementFilter@723ed581, org.springframework.security.web.access.ExceptionTranslationFilter@6b760460, org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter@796065aa, org.springframework.security.oauth2.client.filter.OAuth2ClientAuthenticationProcessingFilter@28a6301f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c306a57]
+17:45:37.801 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:37.801 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:37.802 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:37.802 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:37.802 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:37.802 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:37.811 [main] INFO  o.s.s.c.h.DefaultFilterChainValidator: Checking whether login URL '/googleLogin' is accessible with your configuration
+17:45:37.829 [main] WARN  o.s.s.c.h.DefaultFilterChainValidator: The login page is being protected by the filter chain, but you don't appear to have anonymous authentication enabled. This is almost certainly an error.
+17:45:37.843 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:37.843 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:37.843 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:37.843 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:37.843 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:37.843 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:37.862 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:37.863 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:37.863 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:37.863 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:37.863 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:37.863 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:37.955 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:37.955 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:37.955 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:37.955 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:37.955 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:37.956 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:37.996 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:45:37.997 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:45:37.997 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [jndiProperties] PropertySource with lowest search precedence
+17:45:37.997 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemProperties] PropertySource with lowest search precedence
+17:45:37.997 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [systemEnvironment] PropertySource with lowest search precedence
+17:45:37.997 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:45:38.231 [main] INFO  o.s.b.c.e.ServletRegistrationBean: Mapping servlet: 'dispatcherServlet' to [/]
+17:45:38.235 [main] INFO  o.s.b.c.e.FilterRegistrationBean: Mapping filter: 'metricFilter' to: [/*]
+17:45:38.239 [main] INFO  o.s.b.c.e.FilterRegistrationBean: Mapping filter: 'oauth2ClientContextFilter' to: [/*]
+17:45:38.239 [main] INFO  o.s.b.c.e.FilterRegistrationBean: Mapping filter: 'org.springframework.security.filterChainProxy' to: [/*]
+17:45:38.240 [main] INFO  o.s.b.c.e.FilterRegistrationBean: Mapping filter: 'org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0' to: [/*]
+17:45:38.240 [main] INFO  o.s.b.c.e.FilterRegistrationBean: Mapping filter: 'oAuth2AuthenticationProcessingFilter' to: [/*]
+17:45:38.240 [main] INFO  o.s.b.c.e.FilterRegistrationBean: Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:45:38.240 [main] INFO  o.s.b.c.e.FilterRegistrationBean: Mapping filter: 'applicationContextIdFilter' to: [/*]
+17:45:38.241 [main] INFO  o.s.b.c.e.FilterRegistrationBean: Mapping filter: 'webRequestLoggingFilter' to: [/*]
+17:45:38.246 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+17:45:38.377 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:45:38.537 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Looking for request mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@595b007d: startup date [Wed Apr 01 17:45:35 KST 2015]; root of context hierarchy
+17:45:38.548 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped "{[/find],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<java.lang.String> com.rst.oauth2.google.api.UserResource.findUsersStartingWithPrefix(java.lang.String) throws com.fasterxml.jackson.core.JsonProcessingException
+17:45:38.550 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:45:38.551 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+17:45:38.559 [main] INFO  o.s.w.s.c.a.WebMvcConfigurerAdapter: Adding welcome page: file:/Users/xarus/Downloads/spring-security-oauth2-google-master/src/main/webapp/index.html
+17:45:38.562 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping: Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+17:45:38.568 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Looking for URL mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@595b007d: startup date [Wed Apr 01 17:45:35 KST 2015]; root of context hierarchy
+17:45:38.568 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+17:45:38.568 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+17:45:38.569 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+17:45:38.569 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+17:45:38.570 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'springBootRestApplication': no URL paths identified
+17:45:38.570 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+17:45:38.570 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+17:45:38.571 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'userResource': no URL paths identified
+17:45:38.571 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'OAuth2SecurityConfiguration': no URL paths identified
+17:45:38.571 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'securityWebAppInitializer': no URL paths identified
+17:45:38.571 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.oauth2.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientContextConfiguration': no URL paths identified
+17:45:38.572 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'scopedTarget.oauth2ClientContext': no URL paths identified
+17:45:38.576 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'oauth2ClientContext': no URL paths identified
+17:45:38.577 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.oauth2.config.annotation.web.configuration.OAuth2ClientConfiguration': no URL paths identified
+17:45:38.577 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'oauth2ClientContextFilter': no URL paths identified
+17:45:38.577 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'scopedTarget.accessTokenRequest': no URL paths identified
+17:45:38.577 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'accessTokenRequest': no URL paths identified
+17:45:38.577 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'googleResource': no URL paths identified
+17:45:38.577 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'scopedTarget.googleRestTemplate': no URL paths identified
+17:45:38.577 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'googleRestTemplate': no URL paths identified
+17:45:38.577 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.filterChains': no URL paths identified
+17:45:38.577 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.filterChainProxy': no URL paths identified
+17:45:38.577 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.web.PortMapperImpl#0': no URL paths identified
+17:45:38.577 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.web.PortResolverImpl#0': no URL paths identified
+17:45:38.577 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.config.authentication.AuthenticationManagerFactoryBean#0': no URL paths identified
+17:45:38.578 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.authentication.ProviderManager#0': no URL paths identified
+17:45:38.578 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.web.context.HttpSessionSecurityContextRepository#0': no URL paths identified
+17:45:38.578 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy#0': no URL paths identified
+17:45:38.578 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.web.savedrequest.HttpSessionRequestCache#0': no URL paths identified
+17:45:38.578 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler#0': no URL paths identified
+17:45:38.578 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.access.vote.AffirmativeBased#0': no URL paths identified
+17:45:38.578 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0': no URL paths identified
+17:45:38.578 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0': no URL paths identified
+17:45:38.578 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint#0': no URL paths identified
+17:45:38.578 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.userDetailsServiceFactory': no URL paths identified
+17:45:38.578 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.web.DefaultSecurityFilterChain#0': no URL paths identified
+17:45:38.583 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'oAuth2AuthenticationProcessingFilter': no URL paths identified
+17:45:38.583 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'tokenServices': no URL paths identified
+17:45:38.583 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'clientAuthenticationEntryPoint': no URL paths identified
+17:45:38.583 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.provisioning.InMemoryUserDetailsManager#0': no URL paths identified
+17:45:38.583 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.authentication.dao.DaoAuthenticationProvider#0': no URL paths identified
+17:45:38.583 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0': no URL paths identified
+17:45:38.583 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.authenticationManager': no URL paths identified
+17:45:38.583 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': no URL paths identified
+17:45:38.583 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration': no URL paths identified
+17:45:38.583 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'propertySourcesPlaceholderConfigurer': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'jettyEmbeddedServletContainerFactory': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'embeddedServletContainerCustomizerBeanPostProcessor': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'dispatcherServlet': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'dispatcherServletRegistration': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'error': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'beanNameViewResolver': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'errorAttributes': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'basicErrorController': no URL paths identified
+17:45:38.584 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration': no URL paths identified
+17:45:38.589 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'faviconHandlerMapping': no URL paths identified
+17:45:38.601 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'faviconRequestHandler': no URL paths identified
+17:45:38.602 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration': no URL paths identified
+17:45:38.602 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+17:45:38.602 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+17:45:38.602 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+17:45:38.603 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+17:45:38.603 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'resourceHandlerMapping': no URL paths identified
+17:45:38.604 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+17:45:38.604 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+17:45:38.604 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'mvcConversionService': no URL paths identified
+17:45:38.604 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'mvcValidator': no URL paths identified
+17:45:38.604 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+17:45:38.604 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+17:45:38.604 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+17:45:38.604 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'handlerExceptionResolver': no URL paths identified
+17:45:38.605 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter': no URL paths identified
+17:45:38.605 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'defaultViewResolver': no URL paths identified
+17:45:38.605 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'requestContextListener': no URL paths identified
+17:45:38.605 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'viewResolver': no URL paths identified
+17:45:38.605 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'spring.mvc.CONFIGURATION_PROPERTIES': no URL paths identified
+17:45:38.605 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'spring.resources.CONFIGURATION_PROPERTIES': no URL paths identified
+17:45:38.605 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'hiddenHttpMethodFilter': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'auditEventRepository': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'auditListener': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'authenticationAuditListener': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'authorizationAuditListener': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationWebSecurityConfigurerAdapter': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'authenticationManagerBuilder': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'enableGlobalAuthenticationAutowiredConfigurer': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': no URL paths identified
+17:45:38.606 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'webSecurityExpressionHandler': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'privilegeEvaluator': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'autowiredWebSecurityConfigurersIgnoreParents': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'objectPostProcessor': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.security.config.annotation.web.servlet.configuration.WebMvcSecurityConfiguration': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'requestDataValueProcessor': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$WebMvcSecurityConfigurationConditions$DefaultWebMvcSecurityConfiguration': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$WebMvcSecurityConfigurationConditions': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'ignoredPathsWebSecurityConfigurerAdapter': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'securityProperties': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.ManagementSecurityAutoConfiguration$ManagementWebSecurityConfigurerAdapter': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.ManagementSecurityAutoConfiguration$ManagementSecurityPropertiesConfiguration': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.ManagementSecurityAutoConfiguration': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'healthAggregator': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'statusHealthIndicator': no URL paths identified
+17:45:38.607 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration$InfoPropertiesConfiguration': no URL paths identified
+17:45:38.608 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration$RequestMappingEndpointConfiguration': no URL paths identified
+17:45:38.608 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'requestMappingEndpoint': no URL paths identified
+17:45:38.608 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration': no URL paths identified
+17:45:38.608 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'environmentEndpoint': no URL paths identified
+17:45:38.608 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'healthEndpoint': no URL paths identified
+17:45:38.608 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'beansEndpoint': no URL paths identified
+17:45:38.608 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'infoEndpoint': no URL paths identified
+17:45:38.608 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'metricsEndpoint': no URL paths identified
+17:45:38.608 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'traceEndpoint': no URL paths identified
+17:45:38.608 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'dumpEndpoint': no URL paths identified
+17:45:38.609 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'autoConfigurationAuditEndpoint': no URL paths identified
+17:45:38.609 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'shutdownEndpoint': no URL paths identified
+17:45:38.609 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'configurationPropertiesReportEndpoint': no URL paths identified
+17:45:38.609 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.context.annotation.MBeanExportConfiguration': no URL paths identified
+17:45:38.609 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'mbeanExporter': no URL paths identified
+17:45:38.609 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$Empty': no URL paths identified
+17:45:38.609 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration': no URL paths identified
+17:45:38.609 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'objectNamingStrategy': no URL paths identified
+17:45:38.609 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'mbeanServer': no URL paths identified
+17:45:38.609 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointMBeanExportAutoConfiguration': no URL paths identified
+17:45:38.609 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'endpointMBeanExporter': no URL paths identified
+17:45:38.609 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'endpoints.jmx.CONFIGURATION_PROPERTIES': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'serverProperties': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.ManagementServerPropertiesAutoConfiguration': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'managementServerProperties': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$ApplicationContextFilterConfiguration': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'applicationContextIdFilter': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'endpointHandlerMapping': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'mvcEndpoints': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'environmentMvcEndpoint': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'healthMvcEndpoint': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'metricsMvcEndpoint': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'endpoints.health.CONFIGURATION_PROPERTIES': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration$CodahaleMetricRegistryConfiguration': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'metricRegistry': no URL paths identified
+17:45:38.610 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'codahaleMetricWriter': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'primaryMetricWriter': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration$MetricRepositoryConfiguration': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'metricRepository': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'counterService': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'gaugeService': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.MetricFilterAutoConfiguration': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'metricFilter': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.TraceRepositoryAutoConfiguration': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'traceRepository': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.actuate.autoconfigure.TraceWebFilterAutoConfiguration': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'webRequestLoggingFilter': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$ObjectMappers': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'mappingJackson2HttpMessageConverter': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'http.mappers.CONFIGURATION_PROPERTIES': no URL paths identified
+17:45:38.611 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperAutoConfiguration': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'jacksonObjectMapper': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'messageConverters': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'multipartConfigElement': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'multipartResolver': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'multipart.CONFIGURATION_PROPERTIES': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'autoConfigurationReport': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'applicationEventMulticaster': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'environment': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'systemProperties': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'systemEnvironment': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'messageSource': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'servletContext': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'contextParameters': no URL paths identified
+17:45:38.612 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping: Rejected bean name 'contextAttributes': no URL paths identified
+17:45:38.640 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping: Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:45:38.640 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:45:38.720 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter: Looking for controller advice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@595b007d: startup date [Wed Apr 01 17:45:35 KST 2015]; root of context hierarchy
+17:45:38.745 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver: Looking for exception mappings: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@595b007d: startup date [Wed Apr 01 17:45:35 KST 2015]; root of context hierarchy
+17:45:39.168 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping: Mapped "{[/env/{name:.*}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+17:45:39.168 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping: Mapped "{[/env],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17:45:39.169 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping: Mapped "{[/mappings],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17:45:39.170 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping: Mapped "{[/info],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17:45:39.170 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping: Mapped "{[/autoconfig],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17:45:39.171 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping: Mapped "{[/configprops],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17:45:39.171 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping: Mapped "{[/beans],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17:45:39.172 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping: Mapped "{[/trace],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17:45:39.172 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping: Mapped "{[/health],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke()
+17:45:39.173 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping: Mapped "{[/metrics/{name:.*}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+17:45:39.173 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping: Mapped "{[/metrics],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17:45:39.174 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping: Mapped "{[/dump],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17:45:39.318 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter: Registering beans for JMX exposure on startup
+17:45:39.368 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter: Registering beans for JMX exposure on startup
+17:45:39.384 [main] INFO  o.s.c.s.DefaultLifecycleProcessor: Starting beans in phase 0
+17:45:39.387 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter: Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+17:45:39.413 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter: Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+17:45:39.421 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter: Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+17:45:39.427 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter: Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+17:45:39.432 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter: Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+17:45:39.437 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter: Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+17:45:39.442 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter: Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+17:45:39.446 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter: Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+17:45:39.454 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter: Located managed bean 'autoConfigurationAuditEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationAuditEndpoint]
+17:45:39.458 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter: Located managed bean 'shutdownEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=shutdownEndpoint]
+17:45:39.469 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter: Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+17:45:39.477 [main] DEBUG o.s.w.c.s.StandardServletEnvironment: Adding [Management Server] PropertySource with lowest search precedence
+17:45:39.480 [main] DEBUG o.s.security.web.FilterChainProxy: Initializing filter 'org.springframework.security.filterChainProxy'
+17:45:39.480 [main] DEBUG o.s.security.web.FilterChainProxy: Filter 'org.springframework.security.filterChainProxy' configured successfully
+17:45:39.480 [main] DEBUG o.s.s.o.c.f.OAuth2ClientAuthenticationProcessingFilter: Initializing filter 'oAuth2AuthenticationProcessingFilter'
+17:45:39.481 [main] DEBUG o.s.s.o.c.f.OAuth2ClientAuthenticationProcessingFilter: Filter 'oAuth2AuthenticationProcessingFilter' configured successfully
+17:45:39.481 [main] DEBUG o.s.w.filter.HiddenHttpMethodFilter: Initializing filter 'hiddenHttpMethodFilter'
+17:45:39.481 [main] DEBUG o.s.w.filter.HiddenHttpMethodFilter: Filter 'hiddenHttpMethodFilter' configured successfully
+17:45:39.487 [main] DEBUG o.s.web.servlet.DispatcherServlet: Initializing servlet 'dispatcherServlet'
+17:45:39.488 [main] INFO  /: Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:45:39.489 [main] INFO  o.s.web.servlet.DispatcherServlet: FrameworkServlet 'dispatcherServlet': initialization started
+17:45:39.489 [main] DEBUG o.s.web.servlet.DispatcherServlet: Using MultipartResolver [org.springframework.web.multipart.support.StandardServletMultipartResolver@65a48602]
+17:45:39.492 [main] DEBUG o.s.web.servlet.DispatcherServlet: Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@2b2f5fcf]
+17:45:39.495 [main] DEBUG o.s.web.servlet.DispatcherServlet: Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@312b34e3]
+17:45:39.500 [main] DEBUG o.s.web.servlet.DispatcherServlet: Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@44bd4b0a]
+17:45:39.506 [main] DEBUG o.s.web.servlet.DispatcherServlet: Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@30e9ca13]
+17:45:39.506 [main] DEBUG o.s.web.servlet.DispatcherServlet: Published WebApplicationContext of servlet 'dispatcherServlet' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet]
+17:45:39.506 [main] INFO  o.s.web.servlet.DispatcherServlet: FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+17:45:39.506 [main] DEBUG o.s.web.servlet.DispatcherServlet: Servlet 'dispatcherServlet' configured successfully
+17:45:39.577 [main] INFO  o.e.jetty.server.AbstractConnector: Started SelectChannelConnector@0.0.0.0:9000
+17:45:39.581 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainer: Jetty started on port: 9000
+17:45:39.584 [main] INFO  c.r.o.g.c.SpringBootRestApplication: Started SpringBootRestApplication in 4.979 seconds (JVM running for 5.514)
+17:45:39.584 [main] INFO  c.r.o.g.c.SpringBootRestApplication: Successfully started application: SpringBootRestApplication
+17:46:48.746 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: / at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:46:48.746 [qtp485475507-15] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: No HttpSession currently exists
+17:46:48.746 [qtp485475507-15] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: No SecurityContext was available from the HttpSession: null. A new one will be created.
+17:46:48.748 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: / at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:46:48.749 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: / at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:46:48.749 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: / at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:46:48.749 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: / at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:46:48.749 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: / at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:46:48.750 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: / at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:46:48.751 [qtp485475507-15] DEBUG o.s.s.w.s.SessionManagementFilter: Requested session ID ibvedx6p1l35ccde44ld0cvt is invalid.
+17:46:48.751 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: / at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:46:48.751 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: / at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:46:48.751 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: / at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:46:48.751 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: / at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+17:46:48.752 [qtp485475507-15] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Secure object: FilterInvocation: URL: /; Attributes: [isFullyAuthenticated()]
+17:46:48.753 [qtp485475507-15] INFO  o.s.b.a.a.listener.AuditListener: AuditEvent [timestamp=Wed Apr 01 17:46:48 KST 2015, principal=<unknown>, type=AUTHENTICATION_FAILURE, data={type=org.springframework.security.authentication.AuthenticationCredentialsNotFoundException, message=An Authentication object was not found in the SecurityContext}]
+17:46:48.757 [qtp485475507-15] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Authentication exception occurred; redirecting to authentication entry point
+org.springframework.security.authentication.AuthenticationCredentialsNotFoundException: An Authentication object was not found in the SecurityContext
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.credentialsNotFound(AbstractSecurityInterceptor.java:339) ~[spring-security-core-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:198) ~[spring-security-core-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84) ~[spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:199) ~[spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter.doFilter(OAuth2ClientContextFilter.java:57) [spring-security-oauth2-2.0.3.RELEASE.jar:na]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) ~[spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:154) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160) [spring-security-web-3.2.5.RELEASE.jar:3.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1467) [jetty-servlet-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter.doFilter(OAuth2ClientContextFilter.java:57) [spring-security-oauth2-2.0.3.RELEASE.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1467) [jetty-servlet-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.springframework.boot.actuate.autoconfigure.MetricFilterAutoConfiguration$MetricsFilter.doFilterInternal(MetricFilterAutoConfiguration.java:89) [spring-boot-actuator-1.1.5.RELEASE.jar:1.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1467) [jetty-servlet-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501) [jetty-servlet-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557) [jetty-security-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370) [jetty-server-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494) [jetty-server-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971) [jetty-server-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033) [jetty-server-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644) [jetty-http-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696) [jetty-io-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53) [jetty-io-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.15.v20140411.jar:8.1.15.v20140411]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+17:46:48.765 [qtp485475507-15] DEBUG o.s.s.w.s.HttpSessionRequestCache: DefaultSavedRequest added to Session: DefaultSavedRequest[http://localhost:9000/]
+17:46:48.765 [qtp485475507-15] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Calling Authentication entry point.
+17:46:48.766 [qtp485475507-15] DEBUG o.s.s.web.DefaultRedirectStrategy: Redirecting to 'http://localhost:9000/googleLogin'
+17:46:48.766 [qtp485475507-15] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+17:46:48.770 [qtp485475507-15] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter: SecurityContextHolder now cleared, as request processing completed
+17:46:48.781 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: /googleLogin at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:46:48.781 [qtp485475507-15] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: HttpSession returned null object for SPRING_SECURITY_CONTEXT
+17:46:48.781 [qtp485475507-15] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: No SecurityContext was available from the HttpSession: org.eclipse.jetty.server.session.HashedSession:fhsacl58npev10gahvgcoyf9c@2004915422. A new one will be created.
+17:46:48.781 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: /googleLogin at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:46:48.781 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: /googleLogin at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:46:48.781 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: /googleLogin at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:46:48.781 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: /googleLogin at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:46:48.781 [qtp485475507-15] DEBUG o.s.s.w.s.DefaultSavedRequest: pathInfo: both null (property equals)
+17:46:48.781 [qtp485475507-15] DEBUG o.s.s.w.s.DefaultSavedRequest: queryString: both null (property equals)
+17:46:48.781 [qtp485475507-15] DEBUG o.s.s.w.s.DefaultSavedRequest: requestURI: arg1=/; arg2=/googleLogin (property not equals)
+17:46:48.781 [qtp485475507-15] DEBUG o.s.s.w.s.HttpSessionRequestCache: saved request doesn't match
+17:46:48.781 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: /googleLogin at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:46:48.781 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: /googleLogin at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:46:48.781 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: /googleLogin at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:46:48.781 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: /googleLogin at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:46:48.782 [qtp485475507-15] DEBUG o.s.security.web.FilterChainProxy: /googleLogin at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:46:48.782 [qtp485475507-15] DEBUG o.s.s.o.c.f.OAuth2ClientAuthenticationProcessingFilter: Request is to process authentication
+17:46:48.859 [qtp485475507-15] DEBUG o.s.s.web.DefaultRedirectStrategy: Redirecting to 'https://accounts.google.com/o/oauth2/auth?client_id=963318529444-go19t4hclpbg3430clpp33alfuloc5sk.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2FgoogleLogin&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=U6IT9S'
+17:46:48.859 [qtp485475507-15] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+17:46:48.860 [qtp485475507-15] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Chain processed normally
+17:46:48.860 [qtp485475507-15] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter: SecurityContextHolder now cleared, as request processing completed
+17:47:01.327 [qtp485475507-18] DEBUG o.s.security.web.FilterChainProxy: /googleLogin?state=U6IT9S&code=4/GKqxWjyjAcqP422Q1NCOPZ2NEQAiHb6EGLwAhJ64zzo.Ep0bo2H6sjQTgrKXntQAax3eEFPomAI at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:47:01.327 [qtp485475507-18] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: HttpSession returned null object for SPRING_SECURITY_CONTEXT
+17:47:01.327 [qtp485475507-18] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: No SecurityContext was available from the HttpSession: org.eclipse.jetty.server.session.HashedSession:fhsacl58npev10gahvgcoyf9c@2004915422. A new one will be created.
+17:47:01.327 [qtp485475507-18] DEBUG o.s.security.web.FilterChainProxy: /googleLogin?state=U6IT9S&code=4/GKqxWjyjAcqP422Q1NCOPZ2NEQAiHb6EGLwAhJ64zzo.Ep0bo2H6sjQTgrKXntQAax3eEFPomAI at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:47:01.327 [qtp485475507-18] DEBUG o.s.security.web.FilterChainProxy: /googleLogin?state=U6IT9S&code=4/GKqxWjyjAcqP422Q1NCOPZ2NEQAiHb6EGLwAhJ64zzo.Ep0bo2H6sjQTgrKXntQAax3eEFPomAI at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:47:01.327 [qtp485475507-18] DEBUG o.s.security.web.FilterChainProxy: /googleLogin?state=U6IT9S&code=4/GKqxWjyjAcqP422Q1NCOPZ2NEQAiHb6EGLwAhJ64zzo.Ep0bo2H6sjQTgrKXntQAax3eEFPomAI at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:47:01.327 [qtp485475507-18] DEBUG o.s.security.web.FilterChainProxy: /googleLogin?state=U6IT9S&code=4/GKqxWjyjAcqP422Q1NCOPZ2NEQAiHb6EGLwAhJ64zzo.Ep0bo2H6sjQTgrKXntQAax3eEFPomAI at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:47:01.327 [qtp485475507-18] DEBUG o.s.s.w.s.DefaultSavedRequest: pathInfo: both null (property equals)
+17:47:01.327 [qtp485475507-18] DEBUG o.s.s.w.s.DefaultSavedRequest: queryString: arg1=null; arg2=state=U6IT9S&code=4/GKqxWjyjAcqP422Q1NCOPZ2NEQAiHb6EGLwAhJ64zzo.Ep0bo2H6sjQTgrKXntQAax3eEFPomAI (property not equals)
+17:47:01.327 [qtp485475507-18] DEBUG o.s.s.w.s.HttpSessionRequestCache: saved request doesn't match
+17:47:01.327 [qtp485475507-18] DEBUG o.s.security.web.FilterChainProxy: /googleLogin?state=U6IT9S&code=4/GKqxWjyjAcqP422Q1NCOPZ2NEQAiHb6EGLwAhJ64zzo.Ep0bo2H6sjQTgrKXntQAax3eEFPomAI at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:47:01.328 [qtp485475507-18] DEBUG o.s.security.web.FilterChainProxy: /googleLogin?state=U6IT9S&code=4/GKqxWjyjAcqP422Q1NCOPZ2NEQAiHb6EGLwAhJ64zzo.Ep0bo2H6sjQTgrKXntQAax3eEFPomAI at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:47:01.328 [qtp485475507-18] DEBUG o.s.security.web.FilterChainProxy: /googleLogin?state=U6IT9S&code=4/GKqxWjyjAcqP422Q1NCOPZ2NEQAiHb6EGLwAhJ64zzo.Ep0bo2H6sjQTgrKXntQAax3eEFPomAI at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:47:01.328 [qtp485475507-18] DEBUG o.s.security.web.FilterChainProxy: /googleLogin?state=U6IT9S&code=4/GKqxWjyjAcqP422Q1NCOPZ2NEQAiHb6EGLwAhJ64zzo.Ep0bo2H6sjQTgrKXntQAax3eEFPomAI at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:47:01.328 [qtp485475507-18] DEBUG o.s.security.web.FilterChainProxy: /googleLogin?state=U6IT9S&code=4/GKqxWjyjAcqP422Q1NCOPZ2NEQAiHb6EGLwAhJ64zzo.Ep0bo2H6sjQTgrKXntQAax3eEFPomAI at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:47:01.328 [qtp485475507-18] DEBUG o.s.s.o.c.f.OAuth2ClientAuthenticationProcessingFilter: Request is to process authentication
+17:47:01.342 [qtp485475507-18] DEBUG o.s.s.o.c.t.g.c.AuthorizationCodeAccessTokenProvider: Retrieving token from https://accounts.google.com/o/oauth2/token
+17:47:01.434 [qtp485475507-18] DEBUG o.s.web.client.RestTemplate: Created POST request for "https://accounts.google.com/o/oauth2/token"
+17:47:01.434 [qtp485475507-18] DEBUG o.s.s.o.c.t.g.c.AuthorizationCodeAccessTokenProvider: Encoding and sending form: {grant_type=[authorization_code], code=[4/GKqxWjyjAcqP422Q1NCOPZ2NEQAiHb6EGLwAhJ64zzo.Ep0bo2H6sjQTgrKXntQAax3eEFPomAI], redirect_uri=[http://localhost:9000/googleLogin], client_id=[963318529444-go19t4hclpbg3430clpp33alfuloc5sk.apps.googleusercontent.com], client_secret=[zZauGprRfKQGYUyqjHiLviPJ]}
+17:47:02.537 [qtp485475507-18] DEBUG o.s.web.client.RestTemplate: POST request for "https://accounts.google.com/o/oauth2/token" resulted in 200 (OK)
+17:47:02.589 [qtp485475507-18] DEBUG o.s.w.c.HttpMessageConverterExtractor: Reading [interface org.springframework.security.oauth2.common.OAuth2AccessToken] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@49193f9a]
+17:47:02.634 [qtp485475507-18] DEBUG o.s.web.client.RestTemplate: Created POST request for "https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=ya29.SAHd5yRysJX_DKvenZzcOUqpTtB-CjFBQlYbO8LjraRccF4ZA1LtFpGlr2jXZ43I3dbVHC6Y9MYYNw"
+17:47:02.635 [qtp485475507-18] DEBUG o.s.web.client.RestTemplate: Setting request Accept header to [application/json, application/*+json]
+17:47:02.636 [qtp485475507-18] DEBUG o.s.web.client.RestTemplate: Writing [{token=[ya29.SAHd5yRysJX_DKvenZzcOUqpTtB-CjFBQlYbO8LjraRccF4ZA1LtFpGlr2jXZ43I3dbVHC6Y9MYYNw]}] as "application/x-www-form-urlencoded" using [org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter@350addc2]
+17:47:02.909 [qtp485475507-18] DEBUG o.s.web.client.RestTemplate: POST request for "https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=ya29.SAHd5yRysJX_DKvenZzcOUqpTtB-CjFBQlYbO8LjraRccF4ZA1LtFpGlr2jXZ43I3dbVHC6Y9MYYNw" resulted in 200 (OK)
+17:47:02.911 [qtp485475507-18] DEBUG o.s.web.client.RestTemplate: Reading [java.util.Map<java.lang.String, java.lang.Object>] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1767004a]
+17:47:03.032 [qtp485475507-18] DEBUG o.s.s.o.c.f.OAuth2ClientAuthenticationProcessingFilter: Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities
+17:47:03.033 [qtp485475507-18] INFO  o.s.b.a.a.listener.AuditListener: AuditEvent [timestamp=Wed Apr 01 17:47:03 KST 2015, principal=101672262252734429441, type=AUTHENTICATION_SUCCESS, data={details=remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>}]
+17:47:03.034 [qtp485475507-18] DEBUG o.s.s.w.a.SavedRequestAwareAuthenticationSuccessHandler: Redirecting to DefaultSavedRequest Url: http://localhost:9000/
+17:47:03.035 [qtp485475507-18] DEBUG o.s.s.web.DefaultRedirectStrategy: Redirecting to 'http://localhost:9000/'
+17:47:03.035 [qtp485475507-18] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: SecurityContext stored to HttpSession: 'org.springframework.security.core.context.SecurityContextImpl@637cac9: Authentication: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities'
+17:47:03.036 [qtp485475507-18] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Chain processed normally
+17:47:03.036 [qtp485475507-18] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter: SecurityContextHolder now cleared, as request processing completed
+17:47:03.040 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:47:03.040 [qtp485475507-16] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@637cac9: Authentication: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities'
+17:47:03.040 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:47:03.040 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:47:03.040 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:47:03.040 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:47:03.040 [qtp485475507-16] DEBUG o.s.s.w.s.DefaultSavedRequest: pathInfo: both null (property equals)
+17:47:03.040 [qtp485475507-16] DEBUG o.s.s.w.s.DefaultSavedRequest: queryString: both null (property equals)
+17:47:03.040 [qtp485475507-16] DEBUG o.s.s.w.s.DefaultSavedRequest: requestURI: arg1=/; arg2=/ (property equals)
+17:47:03.040 [qtp485475507-16] DEBUG o.s.s.w.s.DefaultSavedRequest: serverPort: arg1=9000; arg2=9000 (property equals)
+17:47:03.040 [qtp485475507-16] DEBUG o.s.s.w.s.DefaultSavedRequest: requestURL: arg1=http://localhost:9000/; arg2=http://localhost:9000/ (property equals)
+17:47:03.040 [qtp485475507-16] DEBUG o.s.s.w.s.DefaultSavedRequest: scheme: arg1=http; arg2=http (property equals)
+17:47:03.040 [qtp485475507-16] DEBUG o.s.s.w.s.DefaultSavedRequest: serverName: arg1=localhost; arg2=localhost (property equals)
+17:47:03.040 [qtp485475507-16] DEBUG o.s.s.w.s.DefaultSavedRequest: contextPath: arg1=; arg2= (property equals)
+17:47:03.040 [qtp485475507-16] DEBUG o.s.s.w.s.DefaultSavedRequest: servletPath: arg1=/; arg2=/ (property equals)
+17:47:03.040 [qtp485475507-16] DEBUG o.s.s.w.s.HttpSessionRequestCache: Removing DefaultSavedRequest from session if present
+17:47:03.042 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:47:03.042 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:47:03.042 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:47:03.042 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:47:03.042 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:47:03.042 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+17:47:03.042 [qtp485475507-16] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Secure object: FilterInvocation: URL: /; Attributes: [isFullyAuthenticated()]
+17:47:03.042 [qtp485475507-16] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Previously Authenticated: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities
+17:47:03.044 [qtp485475507-16] DEBUG o.s.s.access.vote.AffirmativeBased: Voter: org.springframework.security.web.access.expression.WebExpressionVoter@7cac4c61, returned: 1
+17:47:03.044 [qtp485475507-16] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Authorization successful
+17:47:03.044 [qtp485475507-16] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: RunAsManager did not change Authentication object
+17:47:03.044 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / reached end of additional filter chain; proceeding with original chain
+17:47:03.046 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: DispatcherServlet with name 'dispatcherServlet' processing GET request for [/]
+17:47:03.048 [qtp485475507-16] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Looking up handler method for path /
+17:47:03.051 [qtp485475507-16] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Did not find handler method for [/]
+17:47:03.052 [qtp485475507-16] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Mapping [/] to HandlerExecutionChain with handler [org.springframework.web.servlet.mvc.ParameterizableViewController@b9a7524] and 1 interceptor
+17:47:03.052 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: Last-Modified value for [/] is: -1
+17:47:03.054 [qtp485475507-16] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver: Requested media types are [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+17:47:03.055 [qtp485475507-16] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver: Returning [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [/index.html]] based on requested media type 'text/html'
+17:47:03.056 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: Rendering view [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [/index.html]] in DispatcherServlet with name 'dispatcherServlet'
+17:47:03.057 [qtp485475507-16] DEBUG o.s.w.s.view.InternalResourceView: Forwarding to resource [/index.html] in InternalResourceView 'null'
+17:47:03.059 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:47:03.059 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:47:03.059 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:47:03.059 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:47:03.060 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:47:03.060 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:47:03.060 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:47:03.060 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:47:03.060 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:47:03.060 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:47:03.061 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+17:47:03.061 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html reached end of additional filter chain; proceeding with original chain
+17:47:03.061 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: DispatcherServlet with name 'dispatcherServlet' processing GET request for [/index.html]
+17:47:03.062 [qtp485475507-16] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Looking up handler method for path /index.html
+17:47:03.063 [qtp485475507-16] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Did not find handler method for [/index.html]
+17:47:03.063 [qtp485475507-16] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Matching patterns for request [/index.html] are [/**]
+17:47:03.064 [qtp485475507-16] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: URI Template variables for request [/index.html] are {}
+17:47:03.064 [qtp485475507-16] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Mapping [/index.html] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@4975e21c] and 1 interceptor
+17:47:03.064 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: Last-Modified value for [/index.html] is: -1
+17:47:03.064 [qtp485475507-16] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Trying relative path [index.html] against base location: ServletContext resource [/]
+17:47:03.064 [qtp485475507-16] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Found matching resource: ServletContext resource [/index.html]
+17:47:03.065 [qtp485475507-16] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Determined media type 'text/html' for ServletContext resource [/index.html]
+17:47:03.070 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+17:47:03.071 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: Successfully completed request
+17:47:03.072 [qtp485475507-16] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Chain processed normally
+17:47:03.073 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: Successfully completed request
+17:47:03.074 [qtp485475507-16] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Chain processed normally
+17:47:03.074 [qtp485475507-16] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter: SecurityContextHolder now cleared, as request processing completed
+17:47:03.082 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /libs/jquery-2.1.0.min.js at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:47:03.083 [qtp485475507-17] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@637cac9: Authentication: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities'
+17:47:03.083 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /libs/jquery-2.1.0.min.js at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:47:03.083 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /libs/jquery-2.1.0.min.js at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:47:03.083 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /libs/jquery-2.1.0.min.js at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:47:03.083 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /libs/jquery-2.1.0.min.js at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:47:03.083 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /libs/jquery-2.1.0.min.js at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:47:03.083 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /libs/jquery-2.1.0.min.js at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:47:03.083 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /libs/jquery-2.1.0.min.js at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:47:03.083 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /libs/jquery-2.1.0.min.js at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:47:03.083 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /libs/jquery-2.1.0.min.js at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:47:03.083 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /libs/jquery-2.1.0.min.js at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+17:47:03.083 [qtp485475507-17] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Secure object: FilterInvocation: URL: /libs/jquery-2.1.0.min.js; Attributes: [isFullyAuthenticated()]
+17:47:03.083 [qtp485475507-17] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Previously Authenticated: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities
+17:47:03.084 [qtp485475507-17] DEBUG o.s.s.access.vote.AffirmativeBased: Voter: org.springframework.security.web.access.expression.WebExpressionVoter@7cac4c61, returned: 1
+17:47:03.084 [qtp485475507-17] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Authorization successful
+17:47:03.084 [qtp485475507-17] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: RunAsManager did not change Authentication object
+17:47:03.084 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /libs/jquery-2.1.0.min.js reached end of additional filter chain; proceeding with original chain
+17:47:03.085 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: DispatcherServlet with name 'dispatcherServlet' processing GET request for [/libs/jquery-2.1.0.min.js]
+17:47:03.086 [qtp485475507-17] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Looking up handler method for path /libs/jquery-2.1.0.min.js
+17:47:03.087 [qtp485475507-17] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Did not find handler method for [/libs/jquery-2.1.0.min.js]
+17:47:03.087 [qtp485475507-17] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Matching patterns for request [/libs/jquery-2.1.0.min.js] are [/**]
+17:47:03.087 [qtp485475507-17] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: URI Template variables for request [/libs/jquery-2.1.0.min.js] are {}
+17:47:03.087 [qtp485475507-17] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Mapping [/libs/jquery-2.1.0.min.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@4975e21c] and 1 interceptor
+17:47:03.087 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Last-Modified value for [/libs/jquery-2.1.0.min.js] is: -1
+17:47:03.087 [qtp485475507-17] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Trying relative path [libs/jquery-2.1.0.min.js] against base location: ServletContext resource [/]
+17:47:03.088 [qtp485475507-17] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Found matching resource: ServletContext resource [/libs/jquery-2.1.0.min.js]
+17:47:03.088 [qtp485475507-17] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Determined media type 'application/javascript' for ServletContext resource [/libs/jquery-2.1.0.min.js]
+17:47:03.092 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+17:47:03.092 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Successfully completed request
+17:47:03.093 [qtp485475507-17] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Chain processed normally
+17:47:03.093 [qtp485475507-17] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter: SecurityContextHolder now cleared, as request processing completed
+17:47:03.153 [qtp485475507-19] DEBUG o.s.security.web.FilterChainProxy: /favicon.ico at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:47:03.153 [qtp485475507-19] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@637cac9: Authentication: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities'
+17:47:03.153 [qtp485475507-19] DEBUG o.s.security.web.FilterChainProxy: /favicon.ico at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:47:03.153 [qtp485475507-19] DEBUG o.s.security.web.FilterChainProxy: /favicon.ico at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:47:03.153 [qtp485475507-19] DEBUG o.s.security.web.FilterChainProxy: /favicon.ico at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:47:03.153 [qtp485475507-19] DEBUG o.s.security.web.FilterChainProxy: /favicon.ico at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:47:03.154 [qtp485475507-19] DEBUG o.s.security.web.FilterChainProxy: /favicon.ico at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:47:03.154 [qtp485475507-19] DEBUG o.s.security.web.FilterChainProxy: /favicon.ico at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:47:03.154 [qtp485475507-19] DEBUG o.s.security.web.FilterChainProxy: /favicon.ico at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:47:03.154 [qtp485475507-19] DEBUG o.s.security.web.FilterChainProxy: /favicon.ico at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:47:03.154 [qtp485475507-19] DEBUG o.s.security.web.FilterChainProxy: /favicon.ico at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:47:03.154 [qtp485475507-19] DEBUG o.s.security.web.FilterChainProxy: /favicon.ico at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+17:47:03.154 [qtp485475507-19] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Secure object: FilterInvocation: URL: /favicon.ico; Attributes: [isFullyAuthenticated()]
+17:47:03.154 [qtp485475507-19] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Previously Authenticated: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities
+17:47:03.154 [qtp485475507-19] DEBUG o.s.s.access.vote.AffirmativeBased: Voter: org.springframework.security.web.access.expression.WebExpressionVoter@7cac4c61, returned: 1
+17:47:03.154 [qtp485475507-19] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Authorization successful
+17:47:03.154 [qtp485475507-19] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: RunAsManager did not change Authentication object
+17:47:03.154 [qtp485475507-19] DEBUG o.s.security.web.FilterChainProxy: /favicon.ico reached end of additional filter chain; proceeding with original chain
+17:47:03.155 [qtp485475507-19] DEBUG o.s.web.servlet.DispatcherServlet: DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+17:47:03.155 [qtp485475507-19] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+17:47:03.155 [qtp485475507-19] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: URI Template variables for request [/favicon.ico] are {}
+17:47:03.156 [qtp485475507-19] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Mapping [/favicon.ico] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@7fd6d064] and 1 interceptor
+17:47:03.156 [qtp485475507-19] DEBUG o.s.web.servlet.DispatcherServlet: Last-Modified value for [/favicon.ico] is: -1
+17:47:03.156 [qtp485475507-19] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Trying relative path [favicon.ico] against base location: class path resource []
+17:47:03.156 [qtp485475507-19] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Found matching resource: class path resource [favicon.ico]
+17:47:03.156 [qtp485475507-19] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Determined media type 'image/x-icon' for class path resource [favicon.ico]
+17:47:03.157 [qtp485475507-19] DEBUG o.s.web.servlet.DispatcherServlet: Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+17:47:03.157 [qtp485475507-19] DEBUG o.s.web.servlet.DispatcherServlet: Successfully completed request
+17:47:03.157 [qtp485475507-19] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Chain processed normally
+17:47:03.158 [qtp485475507-19] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter: SecurityContextHolder now cleared, as request processing completed
+17:47:47.253 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: / at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:47:47.253 [qtp485475507-20] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@637cac9: Authentication: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities'
+17:47:47.253 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: / at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:47:47.253 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: / at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:47:47.253 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: / at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:47:47.253 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: / at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:47:47.253 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: / at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:47:47.253 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: / at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:47:47.253 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: / at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:47:47.253 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: / at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:47:47.253 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: / at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:47:47.253 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: / at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+17:47:47.253 [qtp485475507-20] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Secure object: FilterInvocation: URL: /; Attributes: [isFullyAuthenticated()]
+17:47:47.253 [qtp485475507-20] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Previously Authenticated: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities
+17:47:47.254 [qtp485475507-20] DEBUG o.s.s.access.vote.AffirmativeBased: Voter: org.springframework.security.web.access.expression.WebExpressionVoter@7cac4c61, returned: 1
+17:47:47.254 [qtp485475507-20] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Authorization successful
+17:47:47.254 [qtp485475507-20] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: RunAsManager did not change Authentication object
+17:47:47.254 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: / reached end of additional filter chain; proceeding with original chain
+17:47:47.254 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: DispatcherServlet with name 'dispatcherServlet' processing GET request for [/]
+17:47:47.255 [qtp485475507-20] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Looking up handler method for path /
+17:47:47.255 [qtp485475507-20] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Did not find handler method for [/]
+17:47:47.255 [qtp485475507-20] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Mapping [/] to HandlerExecutionChain with handler [org.springframework.web.servlet.mvc.ParameterizableViewController@b9a7524] and 1 interceptor
+17:47:47.255 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: Last-Modified value for [/] is: -1
+17:47:47.256 [qtp485475507-20] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver: Requested media types are [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+17:47:47.256 [qtp485475507-20] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver: Returning [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [/index.html]] based on requested media type 'text/html'
+17:47:47.256 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: Rendering view [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [/index.html]] in DispatcherServlet with name 'dispatcherServlet'
+17:47:47.256 [qtp485475507-20] DEBUG o.s.w.s.view.InternalResourceView: Forwarding to resource [/index.html] in InternalResourceView 'null'
+17:47:47.256 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:47:47.256 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:47:47.256 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:47:47.256 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:47:47.256 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:47:47.256 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:47:47.256 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:47:47.256 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:47:47.256 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:47:47.256 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:47:47.256 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+17:47:47.257 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /index.html reached end of additional filter chain; proceeding with original chain
+17:47:47.257 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: DispatcherServlet with name 'dispatcherServlet' processing GET request for [/index.html]
+17:47:47.259 [qtp485475507-20] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Looking up handler method for path /index.html
+17:47:47.259 [qtp485475507-20] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Did not find handler method for [/index.html]
+17:47:47.259 [qtp485475507-20] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Matching patterns for request [/index.html] are [/**]
+17:47:47.259 [qtp485475507-20] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: URI Template variables for request [/index.html] are {}
+17:47:47.259 [qtp485475507-20] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Mapping [/index.html] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@4975e21c] and 1 interceptor
+17:47:47.259 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: Last-Modified value for [/index.html] is: -1
+17:47:47.259 [qtp485475507-20] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Trying relative path [index.html] against base location: ServletContext resource [/]
+17:47:47.260 [qtp485475507-20] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Found matching resource: ServletContext resource [/index.html]
+17:47:47.260 [qtp485475507-20] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Determined media type 'text/html' for ServletContext resource [/index.html]
+17:47:47.263 [qtp485475507-20] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Resource not modified - returning 304
+17:47:47.263 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+17:47:47.263 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: Successfully completed request
+17:47:47.263 [qtp485475507-20] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Chain processed normally
+17:47:47.263 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: Successfully completed request
+17:47:47.263 [qtp485475507-20] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Chain processed normally
+17:47:47.263 [qtp485475507-20] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter: SecurityContextHolder now cleared, as request processing completed
+17:47:48.311 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:47:48.311 [qtp485475507-16] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@637cac9: Authentication: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities'
+17:47:48.311 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:47:48.311 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:47:48.311 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:47:48.311 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:47:48.311 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:47:48.311 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:47:48.311 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:47:48.311 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:47:48.312 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:47:48.312 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+17:47:48.312 [qtp485475507-16] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Secure object: FilterInvocation: URL: /; Attributes: [isFullyAuthenticated()]
+17:47:48.312 [qtp485475507-16] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Previously Authenticated: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities
+17:47:48.312 [qtp485475507-16] DEBUG o.s.s.access.vote.AffirmativeBased: Voter: org.springframework.security.web.access.expression.WebExpressionVoter@7cac4c61, returned: 1
+17:47:48.312 [qtp485475507-16] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Authorization successful
+17:47:48.312 [qtp485475507-16] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: RunAsManager did not change Authentication object
+17:47:48.312 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: / reached end of additional filter chain; proceeding with original chain
+17:47:48.313 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: DispatcherServlet with name 'dispatcherServlet' processing GET request for [/]
+17:47:48.315 [qtp485475507-16] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Looking up handler method for path /
+17:47:48.315 [qtp485475507-16] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Did not find handler method for [/]
+17:47:48.315 [qtp485475507-16] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Mapping [/] to HandlerExecutionChain with handler [org.springframework.web.servlet.mvc.ParameterizableViewController@b9a7524] and 1 interceptor
+17:47:48.315 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: Last-Modified value for [/] is: -1
+17:47:48.316 [qtp485475507-16] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver: Requested media types are [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+17:47:48.316 [qtp485475507-16] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver: Returning [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [/index.html]] based on requested media type 'text/html'
+17:47:48.316 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: Rendering view [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [/index.html]] in DispatcherServlet with name 'dispatcherServlet'
+17:47:48.316 [qtp485475507-16] DEBUG o.s.w.s.view.InternalResourceView: Forwarding to resource [/index.html] in InternalResourceView 'null'
+17:47:48.316 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:47:48.316 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:47:48.316 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:47:48.316 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:47:48.316 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:47:48.316 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:47:48.316 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:47:48.316 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:47:48.316 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:47:48.317 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:47:48.317 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+17:47:48.317 [qtp485475507-16] DEBUG o.s.security.web.FilterChainProxy: /index.html reached end of additional filter chain; proceeding with original chain
+17:47:48.317 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: DispatcherServlet with name 'dispatcherServlet' processing GET request for [/index.html]
+17:47:48.318 [qtp485475507-16] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Looking up handler method for path /index.html
+17:47:48.318 [qtp485475507-16] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Did not find handler method for [/index.html]
+17:47:48.318 [qtp485475507-16] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Matching patterns for request [/index.html] are [/**]
+17:47:48.318 [qtp485475507-16] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: URI Template variables for request [/index.html] are {}
+17:47:48.318 [qtp485475507-16] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Mapping [/index.html] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@4975e21c] and 1 interceptor
+17:47:48.318 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: Last-Modified value for [/index.html] is: -1
+17:47:48.318 [qtp485475507-16] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Trying relative path [index.html] against base location: ServletContext resource [/]
+17:47:48.319 [qtp485475507-16] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Found matching resource: ServletContext resource [/index.html]
+17:47:48.319 [qtp485475507-16] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Determined media type 'text/html' for ServletContext resource [/index.html]
+17:47:48.319 [qtp485475507-16] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Resource not modified - returning 304
+17:47:48.320 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+17:47:48.320 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: Successfully completed request
+17:47:48.320 [qtp485475507-16] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Chain processed normally
+17:47:48.320 [qtp485475507-16] DEBUG o.s.web.servlet.DispatcherServlet: Successfully completed request
+17:47:48.320 [qtp485475507-16] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Chain processed normally
+17:47:48.320 [qtp485475507-16] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter: SecurityContextHolder now cleared, as request processing completed
+17:47:49.064 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: / at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:47:49.064 [qtp485475507-17] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@637cac9: Authentication: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities'
+17:47:49.064 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: / at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:47:49.064 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: / at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:47:49.064 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: / at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:47:49.064 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: / at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:47:49.064 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: / at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:47:49.064 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: / at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:47:49.064 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: / at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:47:49.064 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: / at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:47:49.064 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: / at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:47:49.064 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: / at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+17:47:49.064 [qtp485475507-17] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Secure object: FilterInvocation: URL: /; Attributes: [isFullyAuthenticated()]
+17:47:49.065 [qtp485475507-17] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Previously Authenticated: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities
+17:47:49.065 [qtp485475507-17] DEBUG o.s.s.access.vote.AffirmativeBased: Voter: org.springframework.security.web.access.expression.WebExpressionVoter@7cac4c61, returned: 1
+17:47:49.065 [qtp485475507-17] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Authorization successful
+17:47:49.065 [qtp485475507-17] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: RunAsManager did not change Authentication object
+17:47:49.065 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: / reached end of additional filter chain; proceeding with original chain
+17:47:49.065 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: DispatcherServlet with name 'dispatcherServlet' processing GET request for [/]
+17:47:49.066 [qtp485475507-17] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Looking up handler method for path /
+17:47:49.067 [qtp485475507-17] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Did not find handler method for [/]
+17:47:49.067 [qtp485475507-17] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Mapping [/] to HandlerExecutionChain with handler [org.springframework.web.servlet.mvc.ParameterizableViewController@b9a7524] and 1 interceptor
+17:47:49.067 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Last-Modified value for [/] is: -1
+17:47:49.067 [qtp485475507-17] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver: Requested media types are [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+17:47:49.068 [qtp485475507-17] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver: Returning [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [/index.html]] based on requested media type 'text/html'
+17:47:49.068 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Rendering view [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [/index.html]] in DispatcherServlet with name 'dispatcherServlet'
+17:47:49.068 [qtp485475507-17] DEBUG o.s.w.s.view.InternalResourceView: Forwarding to resource [/index.html] in InternalResourceView 'null'
+17:47:49.068 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:47:49.068 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:47:49.068 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:47:49.068 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:47:49.068 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:47:49.068 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:47:49.068 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:47:49.068 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:47:49.068 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:47:49.068 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:47:49.068 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /index.html at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+17:47:49.068 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /index.html reached end of additional filter chain; proceeding with original chain
+17:47:49.068 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: DispatcherServlet with name 'dispatcherServlet' processing GET request for [/index.html]
+17:47:49.069 [qtp485475507-17] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Looking up handler method for path /index.html
+17:47:49.069 [qtp485475507-17] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Did not find handler method for [/index.html]
+17:47:49.069 [qtp485475507-17] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Matching patterns for request [/index.html] are [/**]
+17:47:49.069 [qtp485475507-17] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: URI Template variables for request [/index.html] are {}
+17:47:49.069 [qtp485475507-17] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping: Mapping [/index.html] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@4975e21c] and 1 interceptor
+17:47:49.069 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Last-Modified value for [/index.html] is: -1
+17:47:49.069 [qtp485475507-17] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Trying relative path [index.html] against base location: ServletContext resource [/]
+17:47:49.070 [qtp485475507-17] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Found matching resource: ServletContext resource [/index.html]
+17:47:49.070 [qtp485475507-17] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Determined media type 'text/html' for ServletContext resource [/index.html]
+17:47:49.070 [qtp485475507-17] DEBUG o.s.w.s.r.ResourceHttpRequestHandler: Resource not modified - returning 304
+17:47:49.070 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+17:47:49.070 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Successfully completed request
+17:47:49.070 [qtp485475507-17] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Chain processed normally
+17:47:49.071 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Successfully completed request
+17:47:49.071 [qtp485475507-17] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Chain processed normally
+17:47:49.071 [qtp485475507-17] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter: SecurityContextHolder now cleared, as request processing completed
+17:49:18.212 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /find at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:49:18.212 [qtp485475507-20] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@637cac9: Authentication: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities'
+17:49:18.212 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /find at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:49:18.212 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /find at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:49:18.212 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /find at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:49:18.212 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /find at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:49:18.212 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /find at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:49:18.212 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /find at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:49:18.212 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /find at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:49:18.212 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /find at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:49:18.212 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /find at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:49:18.212 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /find at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+17:49:18.213 [qtp485475507-20] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Secure object: FilterInvocation: URL: /find; Attributes: [isFullyAuthenticated()]
+17:49:18.213 [qtp485475507-20] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Previously Authenticated: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities
+17:49:18.213 [qtp485475507-20] DEBUG o.s.s.access.vote.AffirmativeBased: Voter: org.springframework.security.web.access.expression.WebExpressionVoter@7cac4c61, returned: 1
+17:49:18.213 [qtp485475507-20] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Authorization successful
+17:49:18.213 [qtp485475507-20] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: RunAsManager did not change Authentication object
+17:49:18.213 [qtp485475507-20] DEBUG o.s.security.web.FilterChainProxy: /find reached end of additional filter chain; proceeding with original chain
+17:49:18.213 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: DispatcherServlet with name 'dispatcherServlet' processing GET request for [/find]
+17:49:18.214 [qtp485475507-20] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Looking up handler method for path /find
+17:49:18.216 [qtp485475507-20] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Returning handler method [public java.util.List<java.lang.String> com.rst.oauth2.google.api.UserResource.findUsersStartingWithPrefix(java.lang.String) throws com.fasterxml.jackson.core.JsonProcessingException]
+17:49:18.216 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: Last-Modified value for [/find] is: -1
+17:49:18.226 [qtp485475507-20] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver: Resolving exception from handler [public java.util.List<java.lang.String> com.rst.oauth2.google.api.UserResource.findUsersStartingWithPrefix(java.lang.String) throws com.fasterxml.jackson.core.JsonProcessingException]: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'term' is not present
+17:49:18.228 [qtp485475507-20] DEBUG o.s.w.s.m.a.ResponseStatusExceptionResolver: Resolving exception from handler [public java.util.List<java.lang.String> com.rst.oauth2.google.api.UserResource.findUsersStartingWithPrefix(java.lang.String) throws com.fasterxml.jackson.core.JsonProcessingException]: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'term' is not present
+17:49:18.228 [qtp485475507-20] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver: Resolving exception from handler [public java.util.List<java.lang.String> com.rst.oauth2.google.api.UserResource.findUsersStartingWithPrefix(java.lang.String) throws com.fasterxml.jackson.core.JsonProcessingException]: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'term' is not present
+17:49:18.229 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+17:49:18.230 [qtp485475507-20] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Looking up handler method for path /error
+17:49:18.231 [qtp485475507-20] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)]
+17:49:18.231 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: Last-Modified value for [/error] is: -1
+17:49:18.234 [qtp485475507-20] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver: Requested media types are [text/html, text/html;q=0.8] based on Accept header types and producible media types [text/html])
+17:49:18.235 [qtp485475507-20] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver: Returning [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@6a25c1ff] based on requested media type 'text/html'
+17:49:18.236 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: Rendering view [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@6a25c1ff] in DispatcherServlet with name 'dispatcherServlet'
+17:49:18.237 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: Successfully completed request
+17:49:18.237 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+17:49:18.237 [qtp485475507-20] DEBUG o.s.web.servlet.DispatcherServlet: Successfully completed request
+17:49:18.238 [qtp485475507-20] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Chain processed normally
+17:49:18.238 [qtp485475507-20] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter: SecurityContextHolder now cleared, as request processing completed
+17:50:08.481 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /find at position 1 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+17:50:08.481 [qtp485475507-17] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository: Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@637cac9: Authentication: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities'
+17:50:08.481 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /find at position 2 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+17:50:08.481 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /find at position 3 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+17:50:08.481 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /find at position 4 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+17:50:08.481 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /find at position 5 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+17:50:08.481 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /find at position 6 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+17:50:08.481 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /find at position 7 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+17:50:08.481 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /find at position 8 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+17:50:08.481 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /find at position 9 of 11 in additional filter chain; firing Filter: 'OAuth2ClientContextFilter'
+17:50:08.481 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /find at position 10 of 11 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+17:50:08.482 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /find at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+17:50:08.482 [qtp485475507-17] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Secure object: FilterInvocation: URL: /find; Attributes: [isFullyAuthenticated()]
+17:50:08.482 [qtp485475507-17] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Previously Authenticated: org.springframework.security.oauth2.provider.OAuth2Authentication@637cac9: Principal: 101672262252734429441; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenValue=<TOKEN>; Not granted any authorities
+17:50:08.483 [qtp485475507-17] DEBUG o.s.s.access.vote.AffirmativeBased: Voter: org.springframework.security.web.access.expression.WebExpressionVoter@7cac4c61, returned: 1
+17:50:08.483 [qtp485475507-17] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: Authorization successful
+17:50:08.483 [qtp485475507-17] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor: RunAsManager did not change Authentication object
+17:50:08.483 [qtp485475507-17] DEBUG o.s.security.web.FilterChainProxy: /find reached end of additional filter chain; proceeding with original chain
+17:50:08.483 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: DispatcherServlet with name 'dispatcherServlet' processing GET request for [/find]
+17:50:08.486 [qtp485475507-17] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Looking up handler method for path /find
+17:50:08.486 [qtp485475507-17] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Returning handler method [public java.util.List<java.lang.String> com.rst.oauth2.google.api.UserResource.findUsersStartingWithPrefix(java.lang.String) throws com.fasterxml.jackson.core.JsonProcessingException]
+17:50:08.486 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Last-Modified value for [/find] is: -1
+17:50:08.486 [qtp485475507-17] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver: Resolving exception from handler [public java.util.List<java.lang.String> com.rst.oauth2.google.api.UserResource.findUsersStartingWithPrefix(java.lang.String) throws com.fasterxml.jackson.core.JsonProcessingException]: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'term' is not present
+17:50:08.486 [qtp485475507-17] DEBUG o.s.w.s.m.a.ResponseStatusExceptionResolver: Resolving exception from handler [public java.util.List<java.lang.String> com.rst.oauth2.google.api.UserResource.findUsersStartingWithPrefix(java.lang.String) throws com.fasterxml.jackson.core.JsonProcessingException]: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'term' is not present
+17:50:08.486 [qtp485475507-17] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver: Resolving exception from handler [public java.util.List<java.lang.String> com.rst.oauth2.google.api.UserResource.findUsersStartingWithPrefix(java.lang.String) throws com.fasterxml.jackson.core.JsonProcessingException]: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'term' is not present
+17:50:08.487 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+17:50:08.487 [qtp485475507-17] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Looking up handler method for path /error
+17:50:08.488 [qtp485475507-17] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping: Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)]
+17:50:08.488 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Last-Modified value for [/error] is: -1
+17:50:08.488 [qtp485475507-17] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver: Requested media types are [text/html, text/html;q=0.8] based on Accept header types and producible media types [text/html])
+17:50:08.488 [qtp485475507-17] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver: Returning [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@6a25c1ff] based on requested media type 'text/html'
+17:50:08.488 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Rendering view [org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView@6a25c1ff] in DispatcherServlet with name 'dispatcherServlet'
+17:50:08.489 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Successfully completed request
+17:50:08.489 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+17:50:08.489 [qtp485475507-17] DEBUG o.s.web.servlet.DispatcherServlet: Successfully completed request
+17:50:08.489 [qtp485475507-17] DEBUG o.s.s.w.a.ExceptionTranslationFilter: Chain processed normally
+17:50:08.489 [qtp485475507-17] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter: SecurityContextHolder now cleared, as request processing completed
+17:51:51.033 [Thread-0] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext: Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@595b007d: startup date [Wed Apr 01 17:45:35 KST 2015]; root of context hierarchy
+17:51:51.035 [Thread-0] INFO  o.s.c.s.DefaultLifecycleProcessor: Stopping beans in phase 0
+17:51:51.044 [Thread-0] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter: Unregistering JMX-exposed beans on shutdown
+17:51:51.045 [Thread-0] INFO  o.s.j.e.a.AnnotationMBeanExporter: Unregistering JMX-exposed beans on shutdown
+17:51:51.067 [Thread-0] INFO  /: Destroying Spring FrameworkServlet 'dispatcherServlet'
+17:51:51.070 [Thread-0] INFO  o.e.j.server.handler.ContextHandler: stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext{/,file:/Users/xarus/Downloads/spring-security-oauth2-google-master/src/main/webapp/}
